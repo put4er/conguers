@@ -1,0 +1,45 @@
+.qwer
+{
+  background: #F2F2F2;
+}
+
+.spuc1
+{
+  margin: auto;
+  position: relative;
+  width: 100%;
+
+}
+
+.content
+{
+  text-align: center;
+}
+
+
+.spic1{
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+}
+.spic2{
+  list-style-type: none;
+  display: inline-block;
+  padding: 30px;
+}
+
+li a input
+{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color:  #fff;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+

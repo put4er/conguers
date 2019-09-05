@@ -1,0 +1,25 @@
+ <div class="content">
+      <ul class="spuc1">
+        <li *ngFor="let col of list" class="spic1">
+          <img [src]= col.imgURL>
+            <div class="qwer">
+                <p>{{col.name}}</p>
+                <p>{{col.text}}</p>
+                <a> <input type = button [class]='col.but'
+                         [value]=col.but [style.background]=col.but (click)="back()"
+                         [ngStyle]="{'background-color': buttonColor}"></a>
+            </div>
+        </li>
+      </ul>
+      <ul>  <li *ngFor="let col of list2" class="spic2">
+          <img [src]= col.imgURL>
+          <p>{{col.name}}</p>
+          <p>{{col.text}}</p>
+          <a > <input type = button [class]=col.but [value]=col.but [style.background]=col.but></a>
+        </li>
+      </ul>
+
+    </div>
+
+
+

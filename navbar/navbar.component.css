@@ -1,0 +1,24 @@
+nav li
+{
+  padding: 15px ;
+
+}
+
+nav li a
+{
+  border: 1px solid #646d7c;
+  color: white;
+  font-size: 24px;
+}
+
+nav ul
+{
+  margin-left: 20%;
+
+}
+
+.navigate
+{
+  text-align: center;
+}
+

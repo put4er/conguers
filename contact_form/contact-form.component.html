@@ -1,0 +1,41 @@
+<div class="bg3">
+  <p class="p1">Contact Form</p>
+  <br>
+  <pre class="p2">
+Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
+felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
+Etiam a mi quis arcu varius condimentum.</pre>
+  <div class="formContent">
+    <div class="form-group">
+      <label>Ім'я<input class="form-control" name="name" [(ngModel)]="bot.name" #name="ngModel" required/></label>
+      <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+        Не вказано ім'я
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Email
+        <input class="form-control" name="email" [(ngModel)]="bot.email" #email="ngModel"
+               required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      </label>
+      <div [hidden]="email.valid || email.untouched" class="alert alert-danger">
+        Невірний email
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Тема
+        <input class="form-control" name="subject" [(ngModel)]="bot.subject" #subject="ngModel"
+               required>
+      </label>
+      <div [hidden]="subject.valid || subject.untouched" class="alert alert-danger">
+        Не введена тема
+      </div>
+    </div>
+  </div>
+  <div class="button">
+    <div class="form-group">
+      <button [disabled]="name.invalid || email.invalid || subject.invalid"
+              class="btn btn-success" (click)="addBot()">Добавити
+      </button>
+    </div>
+  </div>
+</div>
